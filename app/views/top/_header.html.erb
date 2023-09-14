@@ -6,7 +6,7 @@
     <div class="user_nav">
       <%= link_to "ログアウト", destroy_user_session_path, method: :delete ,class: "nav-link"%>
       <div class="top-header-username">
-        user.nickname さん
+        <%=current_user.nickname %>さん
       </div>
     </div>
   <% else %>
