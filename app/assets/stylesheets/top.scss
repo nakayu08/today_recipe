@@ -18,10 +18,20 @@
 }
 
 .top-header-username{
-  font-size: 20px;
+  color: black;
+}
+
+.user_nav{
+  width: 250px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  font-size: 15px;
   font-weight: bold;
 }
 
 .nav-link{
   text-decoration: none;
+  color: black;
 }
