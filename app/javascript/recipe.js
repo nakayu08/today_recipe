@@ -1,6 +1,7 @@
 // 生成したURL
 const url = 'https://app.rakuten.co.jp/services/api/Recipe/CategoryRanking/20170426?applicationId=1022110364284411341';
 
+
 // 書き出し
 const updateText = (data) => {
     for (let i = 0; i < data.length; i++) {
