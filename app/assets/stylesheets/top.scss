@@ -35,3 +35,25 @@
   text-decoration: none;
   color: black;
 }
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  display: flex;
+}
+li {
+  list-style: none;
+  width: 25%;
+}
+img {
+  width: 100%;
+}
+h2 {
+  font-size: 14px;
+}
+p {
+  font-size: 12px;
+}
