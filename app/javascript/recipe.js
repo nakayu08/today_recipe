@@ -21,10 +21,10 @@ const recipeurl = 'https://app.rakuten.co.jp/services/api/Recipe/CategoryList/20
 
 const updateText = (data) => {
   //console.log(data.small[20]);
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < data.small.length; i++) {
       const insertHtml = `
           <li>
-            <a id="recipeurl" href='${data.small[i].recipeurl}'>${data.small[i].categoryName}へのリンク</a><br>
+            <a id="recipeurl" href='${data.small[i].categoryUrl}'>${data.small[i].categoryName}へのリンク</a>
           </li>
       `;
       $('#recipe_list').append(insertHtml);
