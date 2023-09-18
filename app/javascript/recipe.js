@@ -24,7 +24,7 @@ const updateText = (data) => {
   for (let i = 0; i < data.small.length; i++) {
       const insertHtml = `
           <li>
-            <a id="recipeurl" href='${data.small[i].categoryUrl}'>${data.small[i].categoryName}へのリンク</a>
+            <a id="recipeurl" href='${data.small[i].categoryUrl}'>${data.small[i].categoryName}</a>
           </li>
       `;
       $('#recipe_list').append(insertHtml);
