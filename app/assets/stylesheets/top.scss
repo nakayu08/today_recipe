@@ -42,11 +42,29 @@
   padding: 0;
 }
 ul {
- 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* 幅3等分 */
+  grid-template-rows: auto; /* 100pxの2行 */
+  grid-gap: 10px; /* 隙間10px */
+  margin-bottom: 20px;
 }
 li {
+  display: flex;
   list-style: none;
+  height: 200px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  background-color:lightsalmon;
+  margin:5px;
+  border-radius:10px;
 }
+li a{
+  text-decoration: none;
+  color: black;
+  font-weight:bold;
+}
+
 img {
   width: 100%;
 }
