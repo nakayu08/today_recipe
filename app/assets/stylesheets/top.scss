@@ -41,6 +41,11 @@
   margin: 0;
   padding: 0;
 }
+
+.main-index-api{
+  display: flex;
+  justify-content: center;
+}
 ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr; /* 幅3等分 */
