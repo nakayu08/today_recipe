@@ -42,13 +42,19 @@
   padding: 0;
 }
 
+.main-index-guidance{
+  padding-left: 30px;
+  font-weight:bold;
+  font-size: 25px;
+}
+
 .main-index-api{
   display: flex;
   justify-content: center;
 }
 ul {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; /* 幅3等分 */
+  grid-template-columns: 1fr 1fr 1fr 1fr  1fr 1fr; /* 幅6等分 */
   grid-template-rows: auto; /* 100pxの2行 */
   grid-gap: 10px; /* 隙間10px */
   margin-bottom: 20px;
