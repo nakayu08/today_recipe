@@ -1,3 +1,8 @@
-window.addEventListener('load', function(){
-  console.log("ページが読み込まれました")
-})
+function search (){
+  const searchText  = document.getElementById("search-text");
+  searchText.addEventListener("keyup", () => {
+    console.log(searchText.value);
+  });
+};
+
+window.addEventListener('load', search);
