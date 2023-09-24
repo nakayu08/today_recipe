@@ -23,7 +23,7 @@ const updateText = (data) => {
   //console.log(data.small[20]);
   for (let i = 0; i < data.small.length; i++) {
       const insertHtml = `
-          <li>
+          <li class="js-extraction">
             <a id="recipeurl" href='${data.small[i].categoryUrl}'>${data.small[i].categoryName}</a>
           </li>
       `;
