@@ -10,6 +10,7 @@ require("channels")
 
 require("../recipe")
 require("../search")
+require("../ranking")
 require("jquery")
 
 // Uncomment to copy all static images under ../images to the output folder and reference
