@@ -14,6 +14,6 @@ class IngredientController < ApplicationController
 
   private
     def ingredient_params
-        params.require(:ingredient).permit(:name,:categoryId , :categoryUrl,:parentCategoryId)
+        params.permit(:name,:categoryId , :categoryUrl,:parentCategoryId)
     end
 end
