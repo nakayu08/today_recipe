@@ -52,6 +52,8 @@
   display: flex;
   justify-content: center;
 }
+
+
 ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr  1fr 1fr; /* 幅6等分 */
@@ -59,6 +61,8 @@ ul {
   grid-gap: 10px; /* 隙間10px */
   margin-bottom: 20px;
 }
+
+
 li {
   display: flex;
   list-style: none;
@@ -70,6 +74,14 @@ li {
   margin:5px;
   border-radius:10px;
 }
+
+.ranking_ul{
+  display: flex;
+}
+.ranking_li{
+  list-style: none;
+  width: 25%;
+}
 li a{
   text-decoration: none;
   color: black;
@@ -78,6 +90,7 @@ li a{
 
 img {
   width: 100%;
+  height: 100%;
 }
 h2 {
   font-size: 14px;
