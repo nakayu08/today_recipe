@@ -31,7 +31,7 @@ const updateText = (data) => {
   for (let i = 0; i < 5; i++) {
       const insertHtml = `
           <li class="js-extraction">
-            <a id ="recipeurl" href='/ingredient' data-method="post">${data.medium[i].categoryName}</a>
+            <a id ="recipeurl" href='/ingredient?categoryId=${data.medium[i].categoryId}&name=${data.medium[i].categoryName}&categoryUrl=${data.medium[i].categoryUrl}&parentCategoryId=${data.medium[i].parentCategoryId}' data-method="post">${data.medium[i].categoryName}</a>
           </li>
       `;
       $('#recipe_list').append(insertHtml);
