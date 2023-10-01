@@ -54,7 +54,7 @@
 }
 
 
-ul {
+.recipi_index_list  {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr  1fr 1fr; /* 幅6等分 */
   grid-template-rows: auto; /* 100pxの2行 */
@@ -63,7 +63,7 @@ ul {
 }
 
 
-li {
+.js-extraction  {
   display: flex;
   list-style: none;
   height: 200px;
@@ -81,6 +81,7 @@ li {
 .ranking_li{
   list-style: none;
   width: 25%;
+  height: 75%;
 }
 li a{
   text-decoration: none;
