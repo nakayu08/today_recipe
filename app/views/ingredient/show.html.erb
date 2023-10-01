@@ -1,6 +1,16 @@
-<h3>画面２</h3>
-名前は<%= @ingredient.name %>です。<br>
-レシピURLは<%= link_to("こちら", @ingredient.categoryUrl) %>です。<br>
-カテゴリーIDは<div id ="categoryId"><%= @ingredient.full_category %></div>
+<table border="1" width="500" height="100" class="table">
+  <tr>
+    <th>食材名</th>
+    <th><%= @ingredient.name %></th>
+  </tr>
+  <tr align="center">
+    <td>レシピURL</td>
+    <td><%= link_to("こちら", @ingredient.categoryUrl) %></td>
+  </tr>
+  <tr align="center">
+    <td>カテゴリーID</td>
+    <td><div id ="categoryId"><%= @ingredient.full_category %></div></td>
+  </tr>
+</table>
 
 <ul id="recipe_ranking_list" class="ranking_ul"></ul>
