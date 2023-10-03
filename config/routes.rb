@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root 'top#index'
   resources :top, only: [ :show]
   resources :ingredient, only: [ :show,:create]
+  resources :users, only: :show
 
   namespace 'api' do
     namespace 'v1' do

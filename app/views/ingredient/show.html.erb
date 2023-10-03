@@ -4,7 +4,7 @@
     <th><%= @ingredient.name %></th>
   </tr>
   <tr align="center">
-    <td>レシピURL</td>
+    <td>レシピ一覧へのURL</td>
     <td><%= link_to("こちら", @ingredient.categoryUrl) %></td>
   </tr>
   <tr align="center">
@@ -13,4 +13,7 @@
   </tr>
 </table>
 
+<div>
+<h1>おすすめのレシピ４選</h1>
+</div>
 <ul id="recipe_ranking_list" class="ranking_ul"></ul>

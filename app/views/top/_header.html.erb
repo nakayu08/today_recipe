@@ -4,6 +4,7 @@
   </div>
   <% if user_signed_in? %>
     <div class="user_nav">
+      <%= link_to "マイページ", "/users/#{current_user.id}" , class: "nav-link"%>
       <%= link_to "ログアウト", destroy_user_session_path, method: :delete ,class: "nav-link"%>
       <div class="top-header-username">
         <%=current_user.nickname %>さん
