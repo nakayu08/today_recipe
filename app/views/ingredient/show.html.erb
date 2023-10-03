@@ -13,6 +13,14 @@
   </tr>
 </table>
 
+<div id="favorite-btn<%= @ingredient.id %>">
+    <% if user_signed_in? && @ingredient.favorites_by?(current_user)%>
+      <%=link_to "お気に入り済", ingredient_favorites_path(@ingredient.id),  method: :delete, class: "ingredient_favorites" %>
+    <% else %>
+      <%=link_to "お気に入り登録", ingredient_favorites_path(@ingredient.id), method: :post, class: "ingredient_favorite" %>
+    <% end %>
+</div>
+
 <div>
 <h1>おすすめのレシピ４選</h1>
 </div>
