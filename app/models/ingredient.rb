@@ -1,4 +1,5 @@
 class Ingredient < ApplicationRecord
+  validates :name, uniqueness: true
   has_many :favorites
   def full_category
     self.parentCategoryId.to_s + "-" + self.categoryId.to_s
