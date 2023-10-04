@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+
+
 .top-header{
   background-color:orangered;
   width: 100vw;
@@ -9,6 +11,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.top-footer{
+  background-color:lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50px;
 }
 
 .top-header-title{

@@ -1,16 +1,18 @@
-<h1>こんにちは<%= @nickname %>さん</h1>
-<div class="contents">
-  <h2><%= @nickname %>さんのお気に入り食材一覧</h2>
-  <div class="favorites-li">
-    <% if @favorite_list.present? %>
-      <% @favorite_list.each do |item| %>
-        <div class="favorites-show">
-          <div class="favorites">
-            <%= link_to item.name,ingredient_path(item.id) ,class: "nav-link" %>
-          </div>
-          <%= link_to "お気に入り解除", ingredient_favorites_path(item.id),  method: :delete, class: "favorite-de" %>
-          </div>
+<div class="user-index">
+  <h1>こんにちは<%= @nickname %>さん</h1>
+  <div class="contents">
+    <h2><%= @nickname %>さんのお気に入り食材一覧</h2>
+    <div class="favorites-li">
+      <% if @favorite_list.present? %>
+        <% @favorite_list.each do |item| %>
+          <div class="favorites-show">
+            <div class="favorites">
+              <%= link_to item.name,ingredient_path(item.id) ,class: "nav-link" %>
+            </div>
+            <%= link_to "お気に入り解除", ingredient_favorites_path(item.id),  method: :delete, class: "favorite-de" %>
+            </div>
+        <% end %>
       <% end %>
-    <% end %>
+    </div>
   </div>
 </div>
