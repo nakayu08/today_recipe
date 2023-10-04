@@ -4,7 +4,8 @@ class IngredientController < ApplicationController
     if @ingredient.save
       render :show
     else
-      render :show
+      ingredient =Ingredient.find_by(name: params[:name])
+      redirect_to ingredient_path(ingredient.id)
     end
   end
 

@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   devise_for :users
   root 'top#index'
   resources :top, only: [ :show]
-  resources :ingredient, only: [ :show,:create]
+  resources :ingredient, only: [ :show,:create] do
+    resource :favorites, only: [:create, :destroy]
+  end
   resources :users, only: :show
 
   namespace 'api' do
