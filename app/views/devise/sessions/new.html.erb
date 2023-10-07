@@ -1,10 +1,11 @@
 <div class="user">
   <h1>ログイン</h1>
-  <%# deivseのフラッシュメッセージを表示 %>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+
 
   <div class="user-devise">
+    <%# deivseのフラッシュメッセージを表示 %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <%= render "devise/shared/error_messages", resource: resource %>
 
