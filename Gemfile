@@ -61,3 +61,4 @@ end
 gem 'devise'
 gem 'rakuten_web_service'
 gem 'rails-i18n'
+gem 'rspec-rails', '~> 4.0.0'
