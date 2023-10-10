@@ -247,6 +247,17 @@ html {
   font-size: 62.5%;/*rem算出をしやすくするために*/
 }
 
+.btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: #eb6100;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+}
+
 .btn,
 a.btn,
 button.btn {
