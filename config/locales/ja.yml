@@ -3,3 +3,8 @@ ja:
     attributes:
       user:
         nickname: ニックネーム
+      ingredient:
+        name: 食材名
+        categoryId: カテゴリー
+        parentCategoryId: 親カテゴリー
+        categoryUrl: 食材URL
